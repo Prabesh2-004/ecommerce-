@@ -8,8 +8,8 @@ import axios from 'axios';
 import Layout from './components/Layout';
 import Navbar from './components/Navbar';
 
-export const backendUrl = import.meta.env.VITE_BACKEND_URL;
-axios.defaults.baseURL = 'http://localhost:5000';
+export const backendUrl = 'https://ecommerce-backend-ttga.onrender.com';
+axios.defaults.baseURL = 'https://ecommerce-backend-ttga.onrender.com';
 axios.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
   if (token) {
