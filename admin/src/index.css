@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+.active{
+    background: #0f172a;
+}
+
+input,select,textarea {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+option{
+    background-color: #0f172a;
+}
