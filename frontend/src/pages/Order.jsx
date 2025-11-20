@@ -1,5 +1,6 @@
 // components/UserOrders.jsx
 import React, { useState, useEffect } from 'react';
+import {backendUrl} from '../app'
 
 const UserOrders = () => {
   const [orders, setOrders] = useState([]);
@@ -11,7 +12,7 @@ const UserOrders = () => {
 
   const fetchOrders = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/orders/userorders', {
+      const res = await fetch(backendUrl+'/api/orders/userorders', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
@@ -32,7 +33,7 @@ const UserOrders = () => {
     if (!window.confirm('Are you sure you want to cancel this order?')) return;
 
     try {
-      const res = await fetch('http://localhost:5000/api/orders/cancel', {
+      const res = await fetch(backendUrl+'/api/orders/cancel', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
