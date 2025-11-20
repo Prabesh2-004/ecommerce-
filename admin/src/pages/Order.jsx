@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { backendUrl } from '../App';
 
 export default function AdminOrders() {
   const [orders, setOrders] = useState([]);
@@ -6,7 +7,7 @@ export default function AdminOrders() {
 
   const fetchOrders = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/orders/list', {
+      const res = await fetch(backendUrl+'/api/orders/list', {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
       const data = await res.json();
