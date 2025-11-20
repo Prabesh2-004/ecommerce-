@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const backendURL = 'http://localhost:5000';
+const backendURL = 'https://ecommerce-backend-ttga.onrender.com';
 
 const api = axios.create({
   baseURL: backendURL + '/api',
