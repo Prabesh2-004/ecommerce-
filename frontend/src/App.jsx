@@ -14,8 +14,8 @@ import { CartProvider } from './context/cartContext';
 import PlaceOrder from './pages/PlaceOrder';
 import UserOrders from './pages/Order';
 
-export const backendUrl = import.meta.env.VITE_BACKEND_URL;
-axios.defaults.baseURL = 'http://localhost:5000';
+export const backendUrl = 'https://ecommerce-backend-ttga.onrender.com';
+axios.defaults.baseURL = 'https://ecommerce-backend-ttga.onrender.com';
 axios.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
 
