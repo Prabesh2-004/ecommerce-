@@ -1,6 +1,6 @@
 // components/UserOrders.jsx
 import React, { useState, useEffect } from 'react';
-import {backendUrl} from '../app'
+import {backendUrl} from '../App'
 
 const UserOrders = () => {
   const [orders, setOrders] = useState([]);
