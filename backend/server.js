@@ -17,7 +17,7 @@ connectCloudinary();
 const PORT = process.env.PORT || 5000;
 
 const allowedOrigins = [
-  'http://localhost:5173',
+  'https://ecommerce-forntend.onrender.com',
   'http://localhost:5174'
 ];
 
