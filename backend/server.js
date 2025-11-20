@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 5000;
 
 const allowedOrigins = [
   'https://ecommerce-forntend.onrender.com',
-  'http://localhost:5174'
+  'https://ecommerce-admin-niu7.onrender.com'
 ];
 
 app.use(
