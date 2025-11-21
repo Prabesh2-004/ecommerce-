@@ -54,7 +54,7 @@ const Product = ({ product }) => {
           <h4 className='font-semibold text-gray-800 mb-2'>{products.title}</h4>
           <div className='flex items-center justify-between'>
             <span className='text-2xl font-bold text-indigo-600'>
-              ${products.price}
+              Rs{products.price}
             </span>
             <button onClick={() => handleViewDetails(products._id)} className='cursor-pointer bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition'>
               Add to Cart
